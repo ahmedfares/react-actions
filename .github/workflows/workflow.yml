@@ -17,7 +17,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test 
-      - uses: ./.github/workflows/workflow.yml
+      - uses: ahmedfares/react-actions@main
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
