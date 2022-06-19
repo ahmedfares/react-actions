@@ -17,7 +17,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test 
-      - uses: ahmedfares/react-actions@main
+      - uses: ahmedfares/react-actions@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
